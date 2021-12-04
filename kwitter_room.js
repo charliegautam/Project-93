@@ -16,12 +16,11 @@ var firebaseConfig = {
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
        Room_names = childKey;
       //Start code
-      
-function addUser(){
-      userName = document.getElementById("enter_room").value;
-      firebase.database().ref("/").child(userName).update({
-            purpose : "Add user name"});
-        }
       //End code
       });});}
+      function addUser(){
+            userName = document.getElementById("enter_room").value;
+            firebase.database().ref("/").child(userName).update({
+                purpose : "Add user name"});
+        }
 getData();
