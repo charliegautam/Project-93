@@ -53,7 +53,7 @@ background-image: linear-gradient(to right top, #00e9fa, #00a2ff, #0004ff, #7700
 
 #output
 {
-	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+	padding: 10px; width:80%;background: linear-gradient(to right top, #f5f5f5, #5eb2e2, #be0fbe, #7700ff);border-radius: 15px;
 }
 
 .input_div_room_page
